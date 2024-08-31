@@ -1,0 +1,41 @@
+tasks = {}
+def add_tasks(tasks, name, ID, status):
+    if ID in tasks:
+        print("this ID is already exists in tasks")
+        return
+    
+    tasks[ID] = {
+        "name": name,
+        "task_status" : status,
+    }
+    return
+def update_name(tasks,ID,name):
+    if ID not in tasks:
+        print("id does not exist")
+        
+    tasks[ID]["name"]= name
+    print("sucessfully updated")
+    
+def update_name(tasks,ID,name):
+    if ID not in tasks:
+        print("id does not exist")
+        
+    tasks[ID]["task_status"]= status
+    print("sucessfully updated")
+    
+    return
+def listing(tasks):
+    for ID ,detail in tasks.items:
+        print(tasks[ID])
+        
+    return
+def search(tasks, val):
+    for ID,deatils in tasks.item:
+        if details["name"]==name:
+            print(tasks[ID])
+            return
+        elif ID == val:
+            print(tasks[ID])
+            return
+    print("not found")
+    return
